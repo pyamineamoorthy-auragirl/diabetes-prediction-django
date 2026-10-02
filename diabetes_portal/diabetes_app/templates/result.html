@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Analysis Result</title>
+</head>
+<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
+    <div class="text-center p-10 bg-slate-800 rounded-3xl border border-slate-700 shadow-2xl">
+        <h1 class="text-xl text-slate-400 mb-4 uppercase tracking-widest">Analysis Result</h1>
+        <div class="text-5xl font-black {% if 'Positive' in result %}text-red-500{% else %}text-emerald-400{% endif %} mb-8">
+            {{ result }}
+        </div>
+        <a href="/" class="text-emerald-400 hover:underline">← Run Another Test</a>
+    </div>
+</body>
+</html>
